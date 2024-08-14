@@ -10,8 +10,6 @@ iii) Cut and paste a small portion of the image.
 
 iv)To perform the color conversion between RGB, BGR, HSV, and YCbCr color models.
 
-### Developed By: NARAMALA KUMARTEJA
-### Register Number: 212223230132
 
 ## Software Required:
 Anaconda - Python 3.7
@@ -38,76 +36,122 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
+
+### Developed By: NARAMALA KUMARTEJA
+### Register Number: 2122232132
+
+<table>
+  <tr>
+    <td width=50%>
+
+
 ### i) Read and display the image
-```
-import cv2
-image=cv2.imread('teja.jpg',1)
+```Python
+    import cv2
+image=cv2.imread('teja.jpeg',1)
 image=cv2.resize(image,(400,300))
 cv2.imshow('Teja',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
 ```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/4ddb0956-d65c-43e6-97d4-ea74fe5ea4b9)
+  </td>
+  <td>
+    
+#### OUTPUT:
+![Screenshot 2024-08-14 152758](https://github.com/user-attachments/assets/25e77db9-4528-4626-b70c-e4f17331953f)
+</td>
+</tr>
+
+
+
+<tr>
+  <td width=50%>
+
 
 ### ii)Write the image
+```Python
+    import cv2
+    image=cv2.imread('Teja.jpeg',0)
+    cv2.imwrite('dw.jpeg',image)
 ```
-import cv2
-image=cv2.imread('Teja.jpg',0)
-image=cv2.resize(image,(400,300))
-cv2.imwrite('new1.png',image)
-```
+  </td>
+  <td>
 
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/b3695599-b014-4575-9084-7f8450e7230f)
-
+#### OUTPUT:
+![image](https://github.com/user-attachments/assets/32c1cc07-648c-4014-a61a-d89e14c6b05c)
+</td>
+</tr> 
+<tr> 
+  <td width=50%>
 
 ### iii)Shape of the Image
+```Python
+    import cv2
+    image=cv2.imread('Teja.jpeg',1)
+    print(image.shape)
 ```
-import cv2
-image=cv2.imread('Teja.jpg',1)
-print(image.shape)
-```
+  </td> 
+  <td>
 
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/f78af535-a673-4fd6-b018-78b89b850d44)
-
+#### OUTPUT:
+![image](https://github.com/user-attachments/assets/57b7296c-04d0-453b-a376-a36087a5de26)
+  </td>
+  </tr> 
+  <tr>
+    <td>
+      
 ### iv)Access rows and columns
+```Python
+     import random
+     import cv2
+     image=cv2.imread('Teja.jpeg',1)
+     image=cv2.resize(image,(400,400))
+     for i in range (150,200):
+       for j in range(image.shape[1]):
+          image[i][j]=[random.randint(0,255),
+                       random.randint(0,255),
+                       random.randint(0,255)] 
+    cv2.imshow('part image',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 ```
-import random
-import cv2
-image=cv2.imread('Teja.jpg',1)
-image=cv2.resize(image,(400,400))
-for i in range (150,200):
-    for j in range(image.shape[1]):
-        image[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)] 
-cv2.imshow('teja',image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/9cf6e61e-500b-4666-8898-ac2cc0501ec3)
+  </td>
+  <td width="50%">
+
+#### OUTPUT:
+![Screenshot 2024-08-14 153156](https://github.com/user-attachments/assets/839fbb1d-7d9f-402a-9e0c-a05ccd60b265)
+
+
+ </td>
+ </tr>
+ <tr>
+  <td width=50%>
 
 ### v)Cut and paste portion of image
+```Python
+     import cv2
+     image=cv2.imread('Teja.jpeg',1)
+     image=cv2.resize(image,(400,400))
+     tag =image[150:200,110:160]
+     image[110:160,150:200] = tag
+     cv2.imshow('partimage1',image)
+     cv2.waitKey(0)
+     cv2.destroyAllWindows()
 ```
-import cv2
-image=cv2.imread('teja.jpg',1)
-image=cv2.resize(image,(400,400))
-tag =image[150:200,110:160]
-image[110:160,150:200] = tag
-cv2.imshow('teja',image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/4cc0e9f8-a0cd-43b7-8bb0-d5c209ca2a94)
+  </td>
+  <td>
+
+#### OUTPUT:
+
+![Screenshot 2024-08-14 153239](https://github.com/user-attachments/assets/b7a4f4d6-78a3-4d81-9f6d-ccdb88abb6e7)
+ </td>
+ </tr>
+</table>
 
 ### vi) BGR and RGB to HSV and GRAY
-```
+```Python
 import cv2
-img = cv2.imread('teja.jpg',1)
+img = cv2.imread('Teja.jpeg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -121,17 +165,14 @@ cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/404cb81d-5a2e-459a-84b0-7a0d44b837e8)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/af83d613-53d3-42e7-bf52-41cb32edfcdc)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/ea9ab357-5b0b-48cf-a9bf-aecc5820317b)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/23f0002e-7794-416e-918e-07916a82a475)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/fa8cdbd0-c1ee-464c-824f-0844fb102dcf)
+#### OUTPUT:
+
+![Screenshot 2024-08-14 153837](https://github.com/user-attachments/assets/35d77619-ce46-4d56-b42b-b9a983baebb3)
 
 ### vii) HSV to RGB and BGR
-```
+```Python
 import cv2
-img = cv2.imread('Teja.jpg')
+img = cv2.imread('teja.jpeg')
 img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -146,17 +187,14 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/43e2cfed-c5e4-4573-87e4-8abfb93d8ef3)
+#### OUTPUT:
 
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/28ad39c0-2454-46b5-a861-538c40f0afbe)
-
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/b9c272f1-376a-4ebe-9371-a3dd23f2cf1b)
+![Screenshot 2024-08-14 154019](https://github.com/user-attachments/assets/d705a755-6c9f-4f10-8d8c-7eacca5615d3)
 
 ### viii) RGB and BGR to YCrCb
-```
+```Python
 import cv2
-img = cv2.imread('Teja.jpg')
+img = cv2.imread('Teja.jpeg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
@@ -169,16 +207,15 @@ cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/e8a695b7-4721-44c5-9a3e-0e733c443fcc)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/30d0aeb6-bf3f-4baf-b62a-5166e636e87c)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/364a39dc-d7ce-4605-be19-2b5889e355db)
+#### OUTPUT:
+
+![image](https://github.com/user-attachments/assets/7b8732c0-2ba5-427e-bbf9-76a5de37fe08)
 
 
 ### ix) Split and merge RGB Image
-```
+```Python
 import cv2
-img = cv2.imread('Teja.jpg',1)
+img = cv2.imread('Teja.jpeg',1)
 img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
@@ -195,16 +232,15 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/fda68636-7339-4ad0-9fce-798693df8fa5)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/06a80016-8de9-482f-ae0c-d17891e8eb40)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/dac46315-edf4-4762-9bb8-762303ab2b33)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/6f14fac1-b2d5-4cc3-b4a7-e56c01e34c93)
+#### OUTPUT:
+![Screenshot 2024-08-14 154357](https://github.com/user-attachments/assets/748bc10f-916f-42b4-b1e2-b50f84ad5f98)
+
+
 
 ### x) Split and merge HSV Image
-```
+```Python
 import cv2
-img = cv2.imread("teja.jpg",1)
+img = cv2.imread("Teja.jpeg",1)
 img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
@@ -220,12 +256,8 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-## OUTPUT:
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/cece4bb3-5e24-4c81-a03e-647a52b05832)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/69808926-0681-4ac2-ab0d-a3b8afa79eff)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/2088587c-91ce-47c4-9380-b83998c15942)
-![image](https://github.com/saiganesh2006/COLOR_CONVERSIONS_OF-IMAGE/assets/145742342/ff03210c-f2ed-4274-800e-39cf014d99ff)
-
+#### OUTPUT:
+![Screenshot 2024-08-14 154557](https://github.com/user-attachments/assets/da2a7e26-8219-4f0d-ad45-c9711980aa3e)
 
 
 ## Result:
