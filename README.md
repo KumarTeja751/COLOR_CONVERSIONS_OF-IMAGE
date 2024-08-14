@@ -38,7 +38,7 @@ Split and merge HSV Image
 ##### Program:
 
 ### Developed By: NARAMALA KUMARTEJA
-### Register Number: 2122232132
+### Register Number: 212223230132
 
 <table>
   <tr>
