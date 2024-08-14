@@ -10,6 +10,8 @@ iii) Cut and paste a small portion of the image.
 
 iv)To perform the color conversion between RGB, BGR, HSV, and YCbCr color models.
 
+### Developed By: NARAMALA KUMARTEJA
+### Register Number: 212223230132
 
 ## Software Required:
 Anaconda - Python 3.7
@@ -36,11 +38,6 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-```
-### Developed By: NARAMALA KUMARTEJA
-### Register Number: 212223230132
-```
-
 ### i) Read and display the image
 ```
 import cv2
