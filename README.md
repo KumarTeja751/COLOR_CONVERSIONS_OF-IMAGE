@@ -73,7 +73,7 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/d3cd7d09-d121-4813-b6dc-56100aff40f1)
+![image](https://github.com/user-attachments/assets/4c7cc8b3-8532-435c-ba3f-c9f59827765d)
 
  
 
@@ -94,7 +94,7 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/07cb204d-d080-4573-a838-ea650bfb9ea0)
+![image](https://github.com/user-attachments/assets/7816a976-6362-4419-9129-c8379a89be41)
 
 
  
@@ -123,7 +123,7 @@ cv2.destroyAllWindows()
 
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/cbedc66f-3d24-43b2-9375-aa1f0e1aa1c0)
+![image](https://github.com/user-attachments/assets/b54f0529-b134-490e-a700-63b9efb15136)
 
 
       
@@ -146,7 +146,7 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/cf1fd2ba-08c8-49c8-83a0-807e1f090876)
+![image](https://github.com/user-attachments/assets/313314bc-bb20-4dc2-8d97-167efa7b4aef)
 
 
       
@@ -181,7 +181,7 @@ cv2.destroyAllWindows()
     
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/ba904a50-0a6c-4e5b-92a1-fc719083c780)
+![image](https://github.com/user-attachments/assets/7d07a5d8-17fb-4ca5-b3b6-32dd92a7d785)
 
 
 ### 3.)Image Color Conversion:
@@ -198,7 +198,7 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/6fced9d3-fda8-4052-9fa2-378ead8364fd)
+![image](https://github.com/user-attachments/assets/c35d482d-d03e-4d0c-8ef9-714fdde8ea28)
 #### ii.)Convert the image from RGB to GRAY and display it.
 ```Python
 import cv2
@@ -212,7 +212,7 @@ cv2.destroyAllWindows()
 ```
 
 ### Output:
-![image](https://github.com/user-attachments/assets/df64e2c0-5c85-44e2-96c7-8c9b7f50d866)
+![image](https://github.com/user-attachments/assets/ca81baf3-c8bf-45f5-b101-864a1d2092e4)
 
 #### iii.)Convert the image from RGB to YCrCb and display it.
 ```Python
@@ -227,7 +227,8 @@ cv2.destroyAllWindows()
 
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/48881e9a-19c5-460f-ac2f-7fcdeac453e1)
+![Screenshot 2024-09-10 114937](https://github.com/user-attachments/assets/0162a6cf-99e3-49bb-bf70-92d1c76e929a)
+
 #### iv.)Convert the HSV image back to RGB and display it.
 ```Python
 import cv2
@@ -240,7 +241,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/5c5ed212-d02d-4e0c-969e-b01821d190ca)
+![image](https://github.com/user-attachments/assets/d7ab9071-a119-4488-991a-058e5c369c71)
 ## 4. Access and Manipulate Image Pixels:
 ```Python
 import cv2
@@ -268,10 +269,7 @@ cv2.destroyAllWindows()
 
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/6fb7f78d-d8df-4929-a929-a10b8b9638b0)
-
-![image](https://github.com/user-attachments/assets/5a5dd586-9791-4f10-9196-943433d50874)
-
+![image](https://github.com/user-attachments/assets/b6983bcd-a1d0-4494-a4d1-5c4b678af0b0)
 ## 5. Image Resizing:
 ```Python
 width=600
