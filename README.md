@@ -272,6 +272,8 @@ cv2.destroyAllWindows()
 ![image](https://github.com/user-attachments/assets/b6983bcd-a1d0-4494-a4d1-5c4b678af0b0)
 ## 5. Image Resizing:
 ```Python
+import cv2
+image = cv2.imread('art.jpg', 1)
 width=600
 height=800
 half_width=300
@@ -284,7 +286,7 @@ cv2.destroyAllWindows()
 
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/8d9e2e92-8e2b-4636-927c-760f9f1cedd3)
+![image](https://github.com/user-attachments/assets/151cecd6-a01d-4f05-85ee-9f7b4414393a)
 ## 6.Image Cropping:
 ```Python
 import cv2
