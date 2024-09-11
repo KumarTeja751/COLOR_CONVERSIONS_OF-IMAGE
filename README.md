@@ -1,4 +1,4 @@
-# COLOR_CONVERSIONS_OF-IMAGE
+ # COLOR_CONVERSIONS_OF-IMAGE
 ## AIM:
 To write a python program using OpenCV to do the following image manipulations.
 
@@ -307,7 +307,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/cdd3fdac-85af-4769-8468-2d15103fb275)
+![image](https://github.com/user-attachments/assets/a9ae3620-5540-4cc6-8615-9ec93495869c)
 
 ## 7.Image Flipping:
 i.)Flip the original image horizontally and display it.
@@ -323,7 +323,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/3a081486-4833-4543-bcd2-8cb81b593124)
+![image](https://github.com/user-attachments/assets/da4d8016-1d54-4888-9c75-39263d5faf7b)
 
 
 #### ii.)Flip the original image vertically and display it.
@@ -342,7 +342,7 @@ cv2.destroyAllWindows()
 
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/331ff3fc-e40a-4263-8cdf-34e39be32a68)
+![image](https://github.com/user-attachments/assets/0e8ef788-3a97-4edd-935c-61c6a271acae)
 
 ## 8. Write and Save the Modified Image:
 ```Python
@@ -352,7 +352,7 @@ img = cv2.resize(img,(300,200))
 cv2.imwrite('sunny1.jpg',img)
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/7f852761-6100-4118-aa7c-e2f6eaf8309d)
+![image](https://github.com/user-attachments/assets/04acbbdb-77f8-49f5-b0c2-cafa4b7a71e6)
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
