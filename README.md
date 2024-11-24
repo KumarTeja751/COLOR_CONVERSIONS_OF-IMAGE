@@ -54,7 +54,7 @@ Save the final modified image to your local directory.
 ```
 
 # Program:
-```
+```python
 Developed By: NARAMALA KUMARTEJA
 Register Number: 212223230132
 ```
