@@ -5,7 +5,7 @@ To write a python program using OpenCV to do the following image manipulations.
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
-```
+```python
 1. Read and Display an Image:
 
 Load an image from your local directory and display it.
